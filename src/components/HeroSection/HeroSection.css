@@ -13,8 +13,8 @@
 ---02 COLORS
 
     -Primary: #e67e22
-    -Tints:
-    -Shades:
+    -Tints: #fae5d3
+    -Shades: #cf711f
     -Accents:
     -Greys:
 
@@ -27,13 +27,59 @@
 
 */
 
+.section-hero {
+    background-color: #fae5d3;
+    padding: 9.6rem 0;
+}
+
 .hero {
     max-width: 130rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 9.6rem;
     align-items: center;
-    background-color: #fae5d3;
+    
+}
+
+.btn:link, .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    gap: 1.2;
+
+    /* Put the transition on original state */
+    transition: background-color 0.3s;
+}
+
+.btn--full:link, .btn--full:visited {
+    background-color: #e67e22;
+    color:#fff;
+}
+
+.btn--full:hover, .btn--full:active {
+    background-color: #cf711f;
+}
+
+.btn--outline:link, .btn--outline:visited {
+    background-color: #fff;
+    color:#555;
+}
+
+.btn--outline:hover, .btn--outline:active {
+    background-color: #fdf2e9;
+    /* border: 3px solid #fff; */
+
+    /* Trick to add border inside */
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
 }
 
 .hero-img {
