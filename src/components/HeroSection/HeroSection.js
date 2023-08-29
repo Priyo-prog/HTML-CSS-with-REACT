@@ -2,9 +2,11 @@ import React from 'react';
 import hero from '../images/hero.png';
 import './HeroSection.css';
 import ImageSection from "./ImageSection";
+import HowSection from './HowSection';
 
 function HeroSection() {
     return(
+        <main>
         <section className='section-hero'>
         <div className='hero'>    
         <div className='hero-text-box'>
@@ -26,6 +28,10 @@ function HeroSection() {
         </div>
         </div>
        </section> 
+
+       <HowSection />
+
+       </main>
     )
 
 }
