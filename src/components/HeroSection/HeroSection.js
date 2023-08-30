@@ -29,7 +29,7 @@ function HeroSection() {
         </div>
        </section> 
 
-       <HowSection />
+       <HowSection className="section-how"/>
 
        </main>
     )
